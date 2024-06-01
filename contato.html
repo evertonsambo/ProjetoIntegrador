@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Farmácia Pop</title>
+  <link rel="stylesheet" href="asset/style.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* Estilos adicionais */
+    .contato {
+      padding: 50px 0;
+      background-color: #f4f4f4;
+    }
+
+    .contato h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .contato p {
+      margin-bottom: 20px;
+      color: #666;
+    }
+
+    .contato ul {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+
+    .contato ul li {
+      margin-bottom: 10px;
+      color: #666;
+    }
+
+    .contato ul li i {
+      margin-right: 10px;
+    }
+
+    .contato form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contato form label {
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .contato form input[type="text"],
+    .contato form input[type="email"],
+    .contato form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contato form textarea {
+      height: 150px;
+    }
+
+    .contato form button {
+      background-color: #0056b3;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contato form button:hover {
+      background-color: #00796b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="img/LogoFarmacia.png" alt="Logo da Farmácia Pop" class="logo">
+      <h1>Farmácia Pop</h1>
+      <nav>
+        <ul>
+          <li><a href="index.php">Início</a></li>
+          <li><a href="produtos.php">Produtos</a></li>
+          <li><a href="contato.html">Contato</a></li> 
+          <li><a href="admin.php">Admin</a></li>
+        </ul>
+        <button class="login-btn">Login</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contato">
+    <div class="container">
+      <h2>Entre em Contato</h2>
+      <p>Estamos sempre à disposição para esclarecer suas dúvidas e atender suas necessidades. Entre em contato conosco por email, telefone ou visite nossa loja.</p>
+      <ul>
+        <li><i class="fas fa-envelope"></i> Email: <a href="mailto:contato@farmaciapop.com">contato@farmaciapop.com</a></li>
+        <li><i class="fas fa-phone"></i> Telefone: (XX) XXXX-XXXX</li>
+        <li><i class="fas fa-map-marker-alt"></i> Endereço: Rua Exemplo, 123 - Bairro, Cidade - Estado</li>
+      </ul>
+      <!-- Formulário de Contato -->
+      <form action="enviar.php" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="assunto">Assunto:</label>
+        <input type="text" id="assunto" name="assunto" required>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        <button type="submit" >Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Farmácia Pop. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
